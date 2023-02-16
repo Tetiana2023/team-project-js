@@ -1,0 +1,13 @@
+body{ 
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+/* a{
+
+} */
+.header-part{
+    border-bottom: 1px solid grey;
+    min-height: 80px;
+}

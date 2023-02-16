@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team-project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-   <script src="./code.js" type="module"></script> 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>team-project </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-part">
+      <nav class="header-nav">
+        <a href="./index.html" class="logo">News</a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#favorit" class="nav-link">Favorit</a>
+          </li>
+          <li class="nav-item"><a href="#read" class="nav-link">Read</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" id="search-form">
+        <input
+          class="search-input"
+          type="text"
+          name="search"
+          placeholder="Search  |"/>
+          <button class="search-form-btn" type="submit">
+          <svg width="24" height="24">
+            <use></use>
+          </svg>
+        </button>       
+        
+      </form>
+      <div>
+        <svg width="24" height="24">
+          <use>sun</use>
+        </svg>
+        <span>Sun</span>
+        <input class="checkbox" type="checkbox" name="general" id="general" />
+        <label class="for-checkbox" for="general"></label>
+        <svg width="24" height="24">
+          <use>moon</use>
+        </svg>
+        <span>Moon</span>
+      </div>
+
+      <!-- <label for=""
+        > <span>Light</span> 
+        <input type="range"  />
+        <span>Dak</span>
+      </label> -->
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <input type="text" name="city" />
+                <select name="days" id="days">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                </select>
+                <button class="submit" type="submit">Знайти</button>
+            </form>
+            <ul class="list-card"></ul>
+            <!-- <li>
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+                <button type="button">
+                    <a href=" ">read more</a>
+                </button>
+            </li> -->
+
+        </div>
+    </main>
+    <script src="./code.js" type="module"></script>
+  </body>
 </html>
